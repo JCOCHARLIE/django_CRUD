@@ -5,6 +5,7 @@ class Student(models.Model):
     email = models.EmailField()
     age = models.IntegerField()
     gender = models.CharField(max_length=50, blank=False, null=False)
+    country = models.CharField(default='ligma', max_length=50, blank=False, null=False)
 
 def __str__(self):
     return self.name

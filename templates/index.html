@@ -47,6 +47,11 @@
                         </select>
                     </div>
 
+                    <div class="form-group">
+                        <input type="text" class="form-control  mt-2" placeholder="country" name="country" required>
+
+                    </div>
+
                     <div class="d-grid gap-2">
 
                         <button class="btn btn-success mt-2" type="submit">Insert</button>
@@ -66,6 +71,7 @@
                         <th scope="col">Email</th>
                         <th scope="col">Age</th>
                         <th scope="col">Gender</th>
+                        <th scope="col">Country</th>
                         <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
 
@@ -80,6 +86,7 @@
                         <td>{{d.email}}</td>
                         <td>{{d.age}}</td>
                         <td>{{d.gender}}</td>
+                        <td>{{d.country}}</td>
                         <td><a href="/update/{{d.id}}" type="button" class="btn btn-outline-warning">Edit</a></td>
                         <td><a href="/delete/{{d.id}}" type="button" class="btn btn-outline-danger">Delete</a></td>
                       </tr>
