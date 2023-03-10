@@ -7,6 +7,7 @@ class Student(models.Model):
     gender = models.CharField(max_length=50, blank=False, null=False)
     country = models.CharField(default='ligma', max_length=50, blank=False, null=False)
     city = models.CharField(default='bolsy', max_length=50, blank=False, null=False)
+    amount = models.IntegerField(default=200, blank=False, null=False)
 
 def __str__(self):
     return self.name
